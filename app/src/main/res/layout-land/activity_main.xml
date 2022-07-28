@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/globos"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginLeft="169dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        app:srcCompat="@drawable/manzana" />
+
+    <EditText
+        android:id="@+id/editText_nombre"
+        android:layout_width="311dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="@string/como_te_llamas"
+        android:inputType="textPersonName"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="296dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/editText_nombre"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:background="@drawable/fondoboton"
+        android:text="@string/jugar"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fondoet"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+</RelativeLayout>
